@@ -2,22 +2,25 @@ import AddTodo from './Comp/AddTodo'
 import AppName from './Comp/AppName'
 import Todo1 from './Comp/Todo1'
 import Todo2 from './Comp/Todo2'
+import Footer from './Comp/Footer'
+import './App.css'
 
 function App() {
-
   return (
     <>
-      <center className='todo-container'>
-        <AppName />
-        <div className="item-container">
+      <div className='container wrapper'>
+        <div className='todo-container'>
+          <AppName />
           <AddTodo />
-          <Todo1 />
-          <Todo2 />
+          <div className="items-container">
+            <Todo1 />
+            <Todo2 />
+          </div>
         </div>
-      </center>
+      </div>
+      <Footer />
     </>
   )
 }
 
 export default App
-import './App.css'

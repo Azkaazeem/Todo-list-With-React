@@ -2,9 +2,7 @@ import React from 'react'
 
 const AppName = () => {
   return (
-    <>
-      <h1>TODO App</h1>
-    </>
+    <h1 className="todo-heading">TODO App</h1>
   )
 }
 
